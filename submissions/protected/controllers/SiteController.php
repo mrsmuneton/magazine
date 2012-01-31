@@ -2,6 +2,26 @@
 
 class SiteController extends Controller
 {
+  //controller
+  function init(){
+    if(isset($_POST['SESSION_ID'])){
+      $session=Yii::app()->getSession();
+      $session->close();
+      $session->sessionID = $_POST['SESSION_ID'];
+      $session->open();
+    }
+  }
+  
+  function actionUpload(){
+    if(isset($_POST['myPicture'])){
+      $myPicture=CUploadedFile::getInstanceByName('myPicture');
+      if(!$myPicture->saveAs('someFile.ext'))
+        throw new CHttpException(500);
+      echo 1;
+      Yii::app()->end();
+    }
+  }
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -58,7 +78,7 @@ class SiteController extends Controller
 			if($model->validate())
 			{
 				$headers="From: {$model->email}\r\nReply-To: {$model->email}";
-				mail(Yii::app()->params['adminEmail'],$model->subject,$model->body,$headers);
+				mail(Yii::app()->params['adminEmail'],$model->subject,$model->recipe,$headers);
 				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
 				$this->refresh();
 			}

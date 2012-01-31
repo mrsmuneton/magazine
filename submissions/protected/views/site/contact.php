@@ -55,6 +55,22 @@ Please Submit your pictures and recipes here.
 		<?php echo $form->textArea($model,'recipe',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'recipe'); ?>
 	</div>
+	
+  <?php 
+    $this->widget('MUploadify',array(
+      'name'=>'theimages',
+      //'buttonText'=>Yii::t('application','Upload a picture'),
+      //'script'=>array('myController/upload','id'=>$model->id),
+      //'checkScript'=>array('myController/checkUpload','id'=>$model->id),
+      //fileExt=>'*.jpg;*.png;',
+      //fileDesc=>Yii::t('application','Image files'),
+      //'uploadButton'=>true,
+      //'uploadButtonText'=>'Upload new',
+      //'uploadButtonTagname'=>'button',
+      //'uploadButtonOptions'=>array('class'=>'myButton'),
+      //'onAllComplete'=>'js:function(){alert("Pictures uploaded!";);}',
+    ));
+  ?>	
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>

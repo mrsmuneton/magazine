@@ -225,3 +225,93 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/magazine/submissions/index.php?r=site/contact
 ---
+2012/01/31 07:20:09 [error] [php] include(MUploadify.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\magazine\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(147): import()
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): SiteController->createWidget()
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(72): SiteController->widget()
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): SiteController->render()
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CWebApplication->run()
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+in C:\wamp\www\magazine\submissions\protected\views\site\contact.php (72)
+in C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php (66)
+in C:\wamp\www\magazine\submissions\index.php (13)
+2012/01/31 07:22:46 [error] [php] include(MUploadify.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\magazine\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(147): import()
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): SiteController->createWidget()
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(72): SiteController->widget()
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): SiteController->render()
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CWebApplication->run()
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+in C:\wamp\www\magazine\submissions\protected\views\site\contact.php (72)
+in C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php (66)
+in C:\wamp\www\magazine\submissions\index.php (13)
+2012/01/31 07:26:05 [error] [exception.CException] exception 'CException' with message 'The asset "C:\wamp\www\magazine\submissions\protected\components\assets" to be published does not exist.' in C:\wamp\www\magazine\framework\web\CAssetManager.php:239
+Stack trace:
+#0 C:\wamp\www\magazine\submissions\protected\components\MUploadify.php(180): CAssetManager->publish('C:\wamp\www\mag...')
+#1 C:\wamp\www\magazine\submissions\protected\components\MUploadify.php(152): MUploadify->getBaseUrl()
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(148): MUploadify->init()
+#3 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('MUploadify', Array)
+#4 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(72): CBaseController->widget('MUploadify', Array)
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#6 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#8 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#9 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#10 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#11 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#15 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#16 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+---
+2012/01/31 07:31:29 [warning] [application] Failed to set unsafe attribute "recipe" of "ContactForm".
+in C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php (77)
+in C:\wamp\www\magazine\submissions\index.php (13)
+2012/01/31 07:31:29 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.body" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(81): CComponent->__get('body')
+#1 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#2 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#6 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#7 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/index.php?r=site/contact
+---
+2012/01/31 07:31:59 [warning] [application] Failed to set unsafe attribute "recipe" of "ContactForm".
+in C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php (77)
+in C:\wamp\www\magazine\submissions\index.php (13)
