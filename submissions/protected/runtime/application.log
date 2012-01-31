@@ -1,0 +1,227 @@
+2012/01/30 12:56:05 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.recipe" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\helpers\CHtml.php(2044): CComponent->__get('recipe')
+#1 C:\wamp\www\magazine\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(ContactForm), 'recipe')
+#2 C:\wamp\www\magazine\framework\web\widgets\CActiveForm.php(613): CHtml::activeTextArea(Object(ContactForm), 'recipe', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(56): CActiveForm->textArea(Object(ContactForm), 'recipe', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 12:56:07 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.recipe" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\helpers\CHtml.php(2044): CComponent->__get('recipe')
+#1 C:\wamp\www\magazine\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(ContactForm), 'recipe')
+#2 C:\wamp\www\magazine\framework\web\widgets\CActiveForm.php(613): CHtml::activeTextArea(Object(ContactForm), 'recipe', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(56): CActiveForm->textArea(Object(ContactForm), 'recipe', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:03:39 [error] [exception.CException] exception 'CException' with message 'Property "uploadifyWidget.mult" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(162): CComponent->__set('mult', 'false')
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(60): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(69): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:04:32 [error] [exception.CException] exception 'CException' with message 'Property "uploadifyWidget.mult" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(162): CComponent->__set('mult', 'false')
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(60): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(67): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:05:48 [error] [exception.CException] exception 'CException' with message 'Property "uploadifyWidget.mult" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(162): CComponent->__set('mult', 'false')
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(60): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(67): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:05:56 [error] [exception.CException] exception 'CException' with message 'Property "uploadifyWidget.multi" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(162): CComponent->__set('multi', 'false')
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(60): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(67): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:07:07 [error] [exception.CException] exception 'CException' with message 'Property "uploadifyWidget.mult" is not defined.' in C:\wamp\www\magazine\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(162): CComponent->__set('mult', 'true')
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(60): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(67): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+HTTP_REFERER=http://localhost/magazine/submissions/
+---
+2012/01/30 13:16:12 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.uploadify.uploadifyWidget" is invalid. Make sure it points to an existing PHP file.' in C:\wamp\www\magazine\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(7): CBaseController->widget('application.ext...')
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+---
+2012/01/31 06:50:15 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.uploadify.uploadifyWidget" is invalid. Make sure it points to an existing PHP file.' in C:\wamp\www\magazine\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(7): CBaseController->widget('application.ext...')
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+---
+2012/01/31 07:02:56 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.uploadify.uploadifyWidget" is invalid. Make sure it points to an existing PHP file.' in C:\wamp\www\magazine\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\magazine\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\wamp\www\magazine\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\magazine\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\magazine\submissions\protected\views\site\contact.php(7): CBaseController->widget('application.ext...')
+#4 C:\wamp\www\magazine\framework\web\CBaseController.php(127): require('C:\wamp\www\mag...')
+#5 C:\wamp\www\magazine\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mag...', Array, true)
+#6 C:\wamp\www\magazine\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mag...', Array, true)
+#7 C:\wamp\www\magazine\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 C:\wamp\www\magazine\submissions\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\magazine\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\magazine\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\magazine\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\magazine\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\magazine\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\magazine\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\magazine\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\magazine\submissions\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/magazine/submissions/index.php?r=site/contact
+---
